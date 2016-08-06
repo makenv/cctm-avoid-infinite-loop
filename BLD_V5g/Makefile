@@ -10,14 +10,14 @@ MODEL = CCTM_V5g_Linux3_x86_64ifort
 FC    = ifort
 CC    = cc
 
-f_FLAGS       = -fixed -132 -O2 -override-limits -fno-alias -xHost -I/curr/jjj/build/include -I/gl/tools/run/mpi/openmpi-1.6.5-intel/include -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/ioapi_3.1/Linux2_x86_64ifort -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/pario -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/se_snl -I.
-F_FLAGS       = -fixed -132 -O2 -override-limits -fno-alias -xHost -I/curr/jjj/build/include -I/gl/tools/run/mpi/openmpi-1.6.5-intel/include -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/ioapi_3.1/Linux2_x86_64ifort -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/pario -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/se_snl -I.
-f90_FLAGS     = -free -O2 -fno-alias -I/curr/jjj/build/include -I/gl/tools/run/mpi/openmpi-1.6.5-intel/include -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/ioapi_3.1/Linux2_x86_64ifort -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/pario -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/se_snl -I.
-F90_FLAGS     = -free -O2 -fno-alias -I/curr/jjj/build/include -I/gl/tools/run/mpi/openmpi-1.6.5-intel/include -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/ioapi_3.1/Linux2_x86_64ifort -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/pario -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/se_snl -I.
-C_FLAGS       = -O2 -I/curr/jjj/build/include -I/gl/tools/run/mpi/openmpi-1.6.5-intel/include -DFLDMN -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/mpich/include
+f_FLAGS       = -g -fixed -132 -O2 -override-limits -fno-alias -xHost -I/curr/jjj/build/include -I/gl/tools/run/mpi/openmpi-1.6.5-intel/include -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/ioapi_3.1/Linux2_x86_64ifort -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/pario -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/se_snl -I.
+F_FLAGS       = -g -fixed -132 -O2 -override-limits -fno-alias -xHost -I/curr/jjj/build/include -I/gl/tools/run/mpi/openmpi-1.6.5-intel/include -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/ioapi_3.1/Linux2_x86_64ifort -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/pario -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/se_snl -I.
+f90_FLAGS     = -g -free -O2 -fno-alias -I/curr/jjj/build/include -I/gl/tools/run/mpi/openmpi-1.6.5-intel/include -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/ioapi_3.1/Linux2_x86_64ifort -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/pario -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/se_snl -I.
+F90_FLAGS     = -g -free -O2 -fno-alias -I/curr/jjj/build/include -I/gl/tools/run/mpi/openmpi-1.6.5-intel/include -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/ioapi_3.1/Linux2_x86_64ifort -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/pario -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/se_snl -I.
+C_FLAGS       = -g -O2 -I/curr/jjj/build/include -I/gl/tools/run/mpi/openmpi-1.6.5-intel/include -DFLDMN -I /curr/jjj/build/build/CMAQv5.0.1/lib/x86_64/ifort/mpich/include
 
 LINKER        = ifort
-LINK_FLAGS    = -static-intel -L/curr/jjj/build/lib -L/gl/tools/run/mpi/openmpi-1.6.5-intel/lib -Wl,-rpath,/curr/jjj/build/lib,-rpath,/gl/tools/run/mpi/openmpi-1.6.5-intel/lib -lnetcdff
+LINK_FLAGS    = -g -static-intel -L/curr/jjj/build/lib -L/gl/tools/run/mpi/openmpi-1.6.5-intel/lib -Wl,-rpath,/curr/jjj/build/lib,-rpath,/gl/tools/run/mpi/openmpi-1.6.5-intel/lib -lnetcdff
 
 CPP = ifort
 CPP_FLAGS = \
